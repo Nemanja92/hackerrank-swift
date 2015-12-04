@@ -12,9 +12,9 @@ for (var i = 0; i < n; i++) {
 }
 
 // print array
-for (var i = 0; i < n; i++) {
-	print(matrix[i])
-}
+//for (var i = 0; i < n; i++) {
+//	print(matrix[i])
+//}
 
 //calulate tl to br
 var tlbr = 0
@@ -24,16 +24,5 @@ for (var i = 0; i < n; i++) {
 	tlbr += matrix[i][i]
 	trbl += matrix[i][n-1-i]
 }
-print(tlbr)
-print(trbl)
 print(abs(tlbr - trbl))
 
-// variable to hold the sum of the array elements
-//var sum = 0
-
-//for (var i = 0; i < n; i++) {
-//    sum += Int(arr[i])!
-//}
-
-// print the array elements
-//print(sum)
