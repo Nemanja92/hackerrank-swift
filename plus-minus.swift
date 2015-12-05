@@ -21,7 +21,12 @@ for (var i = 0; i < n; i++) {
 	}
 }
 
-print(Double(positives/n))
-print(Double(negatives/n))
-print(Double(zeroes/n))
+var n2 : Double = Double(n)
+let posPct = Double(positives) / n2
+let negPct = Double(negatives) / n2
+let zeroPct = Double(zeroes) / n2
+
+print(posPct)
+print(negPct)
+print(zeroPct)
 
