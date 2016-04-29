@@ -2,14 +2,12 @@
 // lonely_integer
 
 // number of elements
-// var input = readLine()!
-// var arry = [Int]()
-// for index in 0...arry.count-1{
-	// arry.append(index)
-// }
+var input = readLine()!
+var arrySize = Int(input)
+var arry = readLine()!.characters.split(" ").map( { Int(String($0)) ?? 0 } )
 
-var input = 3
-let arry = [0, 1, 1]
+// var input = 3
+// let arry = [0, 1, 1]
 
 var counts = [Int: Int]()
 
