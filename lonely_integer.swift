@@ -1,19 +1,47 @@
+#!/usr/bin/swift 
 // lonely_integer
 
 // number of elements
-//var input = readLine()!
-var input = 3
-
+// var input = readLine()!
 // var arry = [Int]()
-// for index in 0...arraySize {
+// for index in 0...arry.count-1{
 	// arry.append(index)
 // }
 
-let arry = [0, 1, 2]
+var input = 3
+let arry = [0, 1, 1]
 
+var counts = [Int: Int]()
+
+// print("processing input and adding up")
 for index in 0...arry.count-1 {
-	print(arry[index])
+	let entry = arry[index] 
+	if counts.keys.contains(entry) {
+		// print("incrementing entry")
+		counts[entry] = counts[entry]! + 1
+		// print("\t\(entry) is \(counts[entry]!)")
+	} else {
+		// print("adding an entry")
+		counts[entry] = 1
+		// print("\t\(entry) is \(counts[entry]!)")
+	}	
 }
+
+// print("printing all elements in counts:")
+for key in counts.keys {
+	let val = counts[key]!
+	// print("\t\(key) \(val)")
+}
+
+// print("answer is:")
+for key in counts.keys {
+	let val = counts[key]!
+	if val == 1 {
+		print("\(val)")
+	}
+}
+
+
 // // var output: [String] = []
 
 // for var cls = 0; cls < classes; cls++ {
